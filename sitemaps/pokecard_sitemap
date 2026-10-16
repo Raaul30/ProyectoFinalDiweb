@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa del sitio - PokeCards</title>
+</head>
+<body>
+
+    <header>
+        <h1>PokeCards</h1>
+        <h2>Mapa del sitio</h2>
+        <p>Encuentra fácilmente todas las secciones de nuestra tienda.</p>
+    </header>
+
+    <main>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+
+            <li>Cartas
+                <ul>
+                    <li><a href="cartas-destacadas.html">Cartas destacadas</a></li>
+                    <li><a href="cartas-expansion.html">Por expansión</a></li>
+                    <li><a href="todas-las-cartas.html">Todas las cartas</a></li>
+                    <li><a href="cartas-rareza.html">Por rareza</a></li>
+                </ul>
+            </li>
+
+            <li><a href="ofertas.html">Ofertas</a></li>
+
+            <li><a href="novedades.html">Novedades</a></li>
+
+            <li>Productos sellados
+                <ul>
+                    <li><a href="cajas.html">Cajas</a></li>
+                    <li><a href="sobres.html">Sobres</a></li>
+                    <li><a href="displays.html">Displays</a></li>
+                    <li><a href="etbs.html">ETBs</a></li>
+                </ul>
+            </li>
+
+            <li><a href="colecciones-expansiones.html">Colecciones y expansiones</a></li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+
+            <li>Objetos coleccionables
+                <ul>
+                    <li><a href="figuras.html">Figuras</a></li>
+                    <li><a href="accesorios.html">Accesorios</a></li>
+                    <li><a href="merchandising.html">Merchandising</a></li>
+                </ul>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 PokeCards. Todos los derechos reservados.</p>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+
+</body>
+</html>
