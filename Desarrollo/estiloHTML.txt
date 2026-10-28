@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estructura de la página</title>
+</head>
+<body>
+
+<!-- Logotipo y Cabecera -->
+<header>
+    <img src="logo.png" alt="Logotipo">
+    <h1>Cabecera</h1>
+</header>
+
+<!-- Navegación -->
+<nav>
+    <a href="#">Boton 1</a>
+    <a href="#">Boton 2</a>
+    <a href="#">Boton 3</a>
+    <a href="#">Boton 4</a>
+</nav>
+
+<!-- Contenido principal -->
+<main>
+
+    <!-- Bloque superior -->
+    <section>
+        <aside>
+            <h2>Anuncio de novedades de la pagina</h2>
+        </aside>
+
+        <article><h3>contenido 1</h3></article>
+        <article><h3>contenido 2</h3></article>
+        <article><h3>contenido 3</h3></article>
+        <article><h3>contenido 4</h3></article>
+    </section>
+
+    <!-- Bloque inferior -->
+    <section>
+        <article><h3>contenido 1</h3></article>
+        <article><h3>contenido 1</h3></article>
+        <article><h3>contenido 1</h3></article>
+        <article><h3>contenido 1</h3></article>
+    </section>
+
+</main>
+
+<!-- Pie de página -->
+<footer>
+    <p>Pie de pagina con derechos de autor , contactos etc</p>
+</footer>
+
+</body>
+</html>
