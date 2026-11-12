@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PokeCards | Tienda Pokémon</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- BARRA SUPERIOR -->
+    <div class="top-bar">
+        EL SIGUIENTE HALLAZGO DE TU COLECCIÓN
+    </div>
+
+    <!-- CABECERA -->
+    <header class="header">
+
+        <div class="header-left">
+            <a href="index.html" class="logo">
+                <img src="../logo/logoSinFondo.png" alt="PokeCards">
+                <span>PokeCards</span>
+            </a>
+        </div>
+
+        <div class="header-title">
+            <h1>Contacto</h1>
+        </div>
+
+        <div class="header-actions">
+
+            <button aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a href="cuenta.html" aria-label="Mi cuenta">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="carrito.html" class="cart" aria-label="Carrito">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
+
+        </div>
+
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="cartas.html">Cartas</a></li>
+            <li><a href="productosSellados.html">Productos sellados</a></li>
+            <li><a href="colecciones.html">Colecciones / Expansiones</a></li>
+            <li><a href="objetos.html">Objetos Coleccionables</a></li>
+            <li><a href="ofertas.html">Ofertas</a></li>
+            <li><a href="novedades.html">Novedades</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="main-content">
+
+        <div class="contact-layout">
+
+            <!-- ZONA PRINCIPAL DE CONTENIDOS -->
+            <div class="contact-main-column">
+
+                <!-- SECCIÓN 1: TABLA DE SOPORTE ONLINE -->
+                <section class="contact-card" aria-labelledby="titulo-soporte">
+                    <h2 id="titulo-soporte">Canales de soporte online y tiempos de respuesta</h2>
+                    <p>
+                        Como tienda online, gestionamos todas tus consultas de forma digital. Elige el
+                        departamento adecuado según tu consulta para recibir una respuesta más rápida:
+                    </p>
+
+                    <table class="support-table">
+                        <thead>
+                            <tr>
+                                <th colspan="4">Atención al Coleccionista Online · PokeCards</th>
+                            </tr>
+                            <tr>
+                                <th>Departamento</th>
+                                <th>Tipo de consulta</th>
+                                <th>Canal de contacto</th>
+                                <th>Tiempo medio de respuesta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">Pedidos y Envíos</td>
+                                <td>Seguimiento de paquetes e incidencias de transporte</td>
+                                <td>pedidos@pokecards.es</td>
+                                <td>Menos de 4 horas</td>
+                            </tr>
+                            <tr>
+                                <td>Modificación de dirección o cancelaciones</td>
+                                <td>WhatsApp Soporte</td>
+                                <td>Menos de 1 hora</td>
+                            </tr>
+                            <tr>
+                                <td>Devoluciones</td>
+                                <td>Gestión de garantías en productos sellados</td>
+                                <td>soporte@pokecards.es</td>
+                                <td>24 horas laborables</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Video explicativo iframe -->
+                <section class="contact-card" aria-labelledby="titulo-video">
+                    <h2 id="titulo-video">Cómo enviamos y protegemos tus cartas</h2>
+                    <p>
+                        Conoce los estándares oficiales de Pokémon TCG y descubre cómo preparamos y protegemos cada
+                        carta individual (fundas <em>penny sleeve</em> y <em>toploader</em> rígido) antes de enviarla a
+                        tu domicilio.
+                    </p>
+
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/QZCgMlZhGQc" width="600" height="340"
+                            title="Vídeo sobre el Juego de Cartas Coleccionables Pokémon"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <a href="index.html" class="footer-logo">
+                PokeCards
+            </a>
+
+            <div class="footer-links">
+                <a href="envios.html">Envíos y devoluciones</a>
+                <span>·</span>
+                <a href="condiciones.html">Condiciones de compra</a>
+                <span>·</span>
+                <a href="privacidad.html">Privacidad</a>
+            </div>
+
+            <span class="catalog-label">
+                PokeCards
+            </span>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="contact-info">
+                <i class="fa-regular fa-comment"></i>
+                <span>
+                    Contacto · correo, teléfono y dirección pendientes de definir
+                </span>
+            </div>
+
+            <span class="copyright">
+                © PokeCards
+            </span>
+
+        </div>
+
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
