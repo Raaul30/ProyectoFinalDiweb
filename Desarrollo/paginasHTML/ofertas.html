@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ofertas | PokeCards - Tienda Pokémon</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Estilos específicos para la página de ofertas -->
+    <link rel="stylesheet" href="ofertas.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- BARRA SUPERIOR -->
+<div class="top-bar">
+    EL SIGUIENTE HALLAZGO DE TU COLECCIÓN
+</div>
+
+<!-- CABECERA -->
+<header class="header">
+
+    <div class="header-left">
+        <a href="index.html" class="logo">
+            <img src="../logo/logoSinFondo.png" alt="PokeCards">
+            <span>PokeCards</span>
+        </a>
+    </div>
+
+    <div class="header-title">
+        <h1>Ofertas</h1>
+    </div>
+
+    <div class="header-actions">
+
+        <button aria-label="Buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <a href="cuenta.html" aria-label="Mi cuenta">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+        <a href="carrito.html" class="cart" aria-label="Carrito">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar">
+
+    <button class="menu-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <ul class="nav-links">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="cartas.html">Cartas</a></li>
+        <li><a href="productosSellados.html">Productos sellados</a></li>
+        <li><a href="colecciones.html">Colecciones / Expansiones</a></li>
+        <li><a href="objetos.html">Objetos Coleccionables</a></li>
+        <li><a href="ofertas.html" class="active">Ofertas</a></li>
+        <li><a href="novedades.html">Novedades</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+</nav>
+
+<!-- CONTENIDO DE LA PÁGINA DE OFERTAS -->
+<main class="main-content">
+
+    <!-- BANNER PROMOCIONAL -->
+    <section class="offers-banner">
+        <div class="banner-info">
+            <span class="promo-tag"><i class="fa-solid fa-bolt"></i> OFERTAS LIMITADAS</span>
+            <h2>Descuentos de hasta el 40% en productos seleccionados</h2>
+            <p>Amplía tu mazo competitivo o completa tu álbum con precios especiales hasta agotar existencias.</p>
+        </div>
+    </section>
+
+    <!-- BARRA DE FILTROS Y ORDENACIÓN -->
+    <section class="offers-controls">
+        <div class="filter-tabs">
+            <button class="filter-btn active" data-filter="todos">Todas las ofertas</button>
+            <button class="filter-btn" data-filter="cartas">Cartas Sueltas</button>
+            <button class="filter-btn" data-filter="sellado">Producto Sellado</button>
+            <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+        </div>
+
+        <div class="sort-box">
+            <label for="sort-offers">Ordenar por:</label>
+            <select id="sort-offers">
+                <option value="descuento">Mayor descuento</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- CUADRÍCULA DE PRODUCTOS EN OFERTA -->
+    <section class="offers-grid">
+
+        <!-- Producto 1 -->
+        <article class="offer-card" data-category="sellado">
+            <span class="discount-badge">-25%</span>
+            <div class="product-img">
+                <img src="../img/productos/etb-escarlata.png" alt="Elite Trainer Box Escarlata y Púrpura">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Producto Sellado</span>
+                <h3 class="product-title">Elite Trainer Box - Escarlata y Púrpura</h3>
+                <div class="price-box">
+                    <span class="old-price">54,99 €</span>
+                    <span class="new-price">41,24 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- Producto 2 -->
+        <article class="offer-card" data-category="cartas">
+            <span class="discount-badge">-30%</span>
+            <div class="product-img">
+                <img src="../img/cartas/charizard-ex.png" alt="Charizard ex Full Art">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Carta Suelta · Near Mint</span>
+                <h3 class="product-title">Charizard ex (Full Art) - Llamas Obsidianas</h3>
+                <div class="price-box">
+                    <span class="old-price">29,90 €</span>
+                    <span class="new-price">20,93 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- Producto 3 -->
+        <article class="offer-card" data-category="sellado">
+            <span class="discount-badge">-15%</span>
+            <div class="product-img">
+                <img src="../img/productos/lata-paldea.png" alt="Lata Destinos de Paldea">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Producto Sellado</span>
+                <h3 class="product-title">Lata Coleccionista - Destinos de Paldea</h3>
+                <div class="price-box">
+                    <span class="old-price">24,99 €</span>
+                    <span class="new-price">21,24 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- Producto 4 -->
+        <article class="offer-card" data-category="accesorios">
+            <span class="discount-badge">-40%</span>
+            <div class="product-img">
+                <img src="../img/objetos/album-pikachu.png" alt="Álbum Ultra Pro 9 bolsillos">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Objetos Coleccionables</span>
+                <h3 class="product-title">Álbum Coleccionista Pikachu (360 cartas)</h3>
+                <div class="price-box">
+                    <span class="old-price">22,50 €</span>
+                    <span class="new-price">13,50 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- Producto 5 -->
+        <article class="offer-card" data-category="cartas">
+            <span class="discount-badge">-20%</span>
+            <div class="product-img">
+                <img src="../img/cartas/mewtwo-vstar.png" alt="Mewtwo VSTAR">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Carta Suelta · Near Mint</span>
+                <h3 class="product-title">Mewtwo VSTAR - Cenit Supremo</h3>
+                <div class="price-box">
+                    <span class="old-price">65,00 €</span>
+                    <span class="new-price">52,00 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- Producto 6 -->
+        <article class="offer-card" data-category="sellado">
+            <span class="discount-badge">-18%</span>
+            <div class="product-img">
+                <img src="../img/productos/booster-bundle-151.png" alt="Booster Bundle Pokémon 151">
+            </div>
+            <div class="product-info">
+                <span class="product-category">Producto Sellado</span>
+                <h3 class="product-title">Booster Bundle (6 sobres) - Escarlata y Púrpura 151</h3>
+                <div class="price-box">
+                    <span class="old-price">34,99 €</span>
+                    <span class="new-price">28,69 €</span>
+                </div>
+                <button class="btn-add-cart">
+                    <i class="fa-solid fa-cart-plus"></i> Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <a href="index.html" class="footer-logo">
+            PokeCards
+        </a>
+
+        <div class="footer-links">
+            <a href="envios.html">Envíos y devoluciones</a>
+            <span>·</span>
+            <a href="condiciones.html">Condiciones de compra</a>
+            <span>·</span>
+            <a href="privacidad.html">Privacidad</a>
+        </div>
+
+        <span class="catalog-label">
+                PokeCards
+            </span>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="contact-info">
+            <i class="fa-regular fa-comment"></i>
+            <span>
+                    Contacto · correo, teléfono y dirección pendientes de definir
+                </span>
+        </div>
+
+        <span class="copyright">
+                © PokeCards
+            </span>
+
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
