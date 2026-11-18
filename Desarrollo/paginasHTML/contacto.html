@@ -5,20 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PokeCards | Tienda Pokémon</title>
+    <title>Contacto | PokeCards</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Hoja de estilos externa principal -->
+    <link rel="stylesheet" href="claro.css" title="Diseño claro">
+    <!-- Hoja de estilos alternativa -->
+    <link rel="alternate stylesheet" href="oscuro.css" title="Diseño oscuro">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- Estilos internos -->
+    <style>
+        h2 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
 
+        p {
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #d5cfe0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #261a3c;
+            color: #ffffff;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- BARRA SUPERIOR -->
-    <div class="top-bar">
+    <!-- Estilo directo en la barra superior -->
+    <div class="top-bar" style="letter-spacing: 1px; font-size: 10px;">
         EL SIGUIENTE HALLAZGO DE TU COLECCIÓN
     </div>
 
@@ -26,7 +61,7 @@
     <header class="header">
 
         <div class="header-left">
-            <a href="index.html" class="logo">
+            <a href="inicio.html" class="logo">
                 <img src="../logo/logoSinFondo.png" alt="PokeCards">
                 <span>PokeCards</span>
             </a>
@@ -86,7 +121,8 @@
                 <!-- SECCIÓN 1: TABLA DE SOPORTE ONLINE -->
                 <section class="contact-card" aria-labelledby="titulo-soporte">
                     <h2 id="titulo-soporte">Canales de soporte online y tiempos de respuesta</h2>
-                    <p>
+                    <!-- 1. Estilo directo en párrafo destacado -->
+                    <p style="background-color: #ede8f7; color: #261a3c; padding: 12px; border-radius: 6px;">
                         Como tienda online, gestionamos todas tus consultas de forma digital. Elige el
                         departamento adecuado según tu consulta para recibir una respuesta más rápida:
                     </p>
@@ -94,7 +130,10 @@
                     <table class="support-table">
                         <thead>
                             <tr>
-                                <th colspan="4">Atención al Coleccionista Online · PokeCards</th>
+                                <!-- Estilo directo para centrar el encabezado principal de la tabla -->
+                                <th colspan="4" style="text-align: center; font-size: 16px;">
+                                    Atención al Coleccionista Online · PokeCards
+                                </th>
                             </tr>
                             <tr>
                                 <th>Departamento</th>
@@ -154,7 +193,7 @@
 
         <div class="footer-main">
 
-            <a href="index.html" class="footer-logo">
+            <a href="inicio.html" class="footer-logo">
                 PokeCards
             </a>
 
@@ -176,7 +215,7 @@
 
             <div class="contact-info">
                 <i class="fa-regular fa-comment"></i>
-                <span>
+                <span style="font-style: italic;">
                     Contacto · correo, teléfono y dirección pendientes de definir
                 </span>
             </div>
