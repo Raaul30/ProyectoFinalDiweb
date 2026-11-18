@@ -1,4 +1,3 @@
-
 /* RESET GENERAL */
 
 /* CONFIGURACIÓN GENERAL DE LA WEB */
@@ -8,7 +7,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     min-height: 100%;
 }
@@ -38,6 +38,7 @@ body {
     gap: 20px;
     width: 100%;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -353,28 +354,10 @@ body {
 }
 
 
-/* CONTENEDOR PARA PRODUCTOS */
-.news-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 100%;
+h1 {
+    color: #713bff;
 }
 
-/* TARJETAS */
-.news-card {
-    min-width: 0;
-    overflow: hidden;
-    background-color: #fff;
-    border-radius: 12px;
-}
-
-/* IMÁGENES */
-.news-card-image {
-    width: 100%;
-    height: 300px;
-    object-fit: contain;
-    display: block;
-    padding: 15px;
-    background-color: #f5f4f7;
+h2 {
+    color: #713bff;
 }

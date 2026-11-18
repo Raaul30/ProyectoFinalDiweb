@@ -7,10 +7,40 @@
 
     <title>Inicio | PokeCards</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Diseño claro -->
+    <link rel="stylesheet" href="claro.css" title="Diseño claro">
+    <!-- Diseño oscuro -->
+    <link rel="alternate stylesheet" href="oscuro.css" title="Diseño oscuro">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* CONTENEDOR PARA PRODUCTOS */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* TARJETAS */
+        .news-card {
+            min-width: 0;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 12px;
+        }
+
+        /* IMÁGENES */
+        .news-card-image {
+            width: 100%;
+            height: 300px;
+            object-fit: contain;
+            display: block;
+            padding: 15px;
+            background-color: #f5f4f7;
+        }
+    </style>
 </head>
 
 <body>
@@ -82,10 +112,8 @@
 
             <div class="news-grid">
                 <article class="news-card">
-                    <img class="news-card-image"
-                        src="../imagenes/ETBOscuridadAbsoluta.png"
-                        alt="Caja premium de colección"
-                        loading="lazy">
+                    <img class="news-card-image" src="../imagenes/ETBOscuridadAbsoluta.png"
+                        alt="Caja premium de colección" loading="lazy">
                     <div class="news-card-info">
                         <span class="news-card-category">Producto sellado</span>
                         <h3 class="news-card-title">Caja premium de colección</h3>
@@ -93,10 +121,8 @@
                 </article>
 
                 <article class="news-card">
-                    <img class="news-card-image"
-                        src="../imagenes/lataMegaMoonlightGengar.png"
-                        alt="Carta especial de colección"
-                        loading="lazy">
+                    <img class="news-card-image" src="../imagenes/lataMegaMoonlightGengar.png"
+                        alt="Carta especial de colección" loading="lazy">
                     <div class="news-card-info">
                         <span class="news-card-category">Cartas</span>
                         <h3 class="news-card-title">Cartas especiales</h3>
@@ -104,10 +130,8 @@
                 </article>
 
                 <article class="news-card">
-                    <img class="news-card-image"
-                        src="../imagenes/charizarVMax.png"
-                        alt="Figura de criatura fantástica coleccionable"
-                        loading="lazy">
+                    <img class="news-card-image" src="../imagenes/charizarVMax.png"
+                        alt="Figura de criatura fantástica coleccionable" loading="lazy">
                     <div class="news-card-info">
                         <span class="news-card-category">Objetos coleccionables</span>
                         <h3 class="news-card-title">Figuras coleccionables</h3>
@@ -115,10 +139,8 @@
                 </article>
 
                 <article class="news-card">
-                    <img class="news-card-image"
-                        src="../imagenes/packBlister30Aniversario.png"
-                        alt="Pack Blister del 30 Aniversario"
-                        loading="lazy">
+                    <img class="news-card-image" src="../imagenes/packBlister30Aniversario.png"
+                        alt="Pack Blister del 30 Aniversario" loading="lazy">
                     <div class="news-card-info">
                         <span class="news-card-category">Nuevas expansiones</span>
                         <h3 class="news-card-title">Sobres de expansión</h3>
@@ -155,4 +177,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
